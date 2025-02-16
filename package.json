@@ -1,0 +1,43 @@
+{
+  "name": "voice-enabled-gis",
+  "version": "1.0.0",
+  "description": "Voice-controlled geospatial web application using Bhuvan services",
+  "main": "src/app.js",
+  "scripts": {
+    "build": "webpack --mode production",
+    "dev": "webpack serve --mode development",
+    "test": "jest",
+    "lint": "eslint src/",
+    "prepare": "husky install"
+  },
+  "dependencies": {
+    "@tensorflow-models/speech-commands": "^1.4.0",
+    "@tensorflow/tfjs": "^3.18.0",
+    "ol": "^7.3.0",
+    "proj4": "^2.8.0",
+    "rxjs": "^7.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.5.0",
+    "eslint": "^8.38.0",
+    "html-webpack-plugin": "^5.5.0",
+    "husky": "^8.0.3",
+    "jest": "^29.5.0",
+    "webpack": "^5.76.1",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.13.1"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions"
+  ],
+  "jest": {
+    "testEnvironment": "jsdom",
+    "transform": {
+      "^.+\\.js$": "babel-jest"
+    }
+  },
+  "type": "module"
+}
