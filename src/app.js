@@ -1,6 +1,6 @@
-import { MapBridge } from './core/MapBridge';
-import { VoiceEngine } from './core/VoiceEngine';
-import { BhuvanService } from './services/BhuvanService';
+import { MapBridge } from './core/MapBridge.js';
+import { VoiceEngine } from './core/VoiceEngine.js';
+import { BhuvanService } from './services/BhuvanService.js';
 
 class GISApplication {
   constructor() {
